@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#202024];
+    @apply text-[#E1E1E6];
+    font-family: "Roboto", sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong {
+    @apply font-semibold;
+  }
+  [disable] {
+    @apply opacity-60;
+  }
+}
