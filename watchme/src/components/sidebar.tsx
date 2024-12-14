@@ -19,7 +19,7 @@ export function Sidebar() {
       </h1>
       <div className="flex flex-col items-center p-5">
         {titleElement.map((buttonItem) => {
-          return <Button title={buttonItem} />;
+          return <Button title={buttonItem} key={buttonItem} />;
         })}
       </div>
     </aside>
