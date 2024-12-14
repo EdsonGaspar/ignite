@@ -1,10 +1,10 @@
 import "./App.css";
+import { Header } from "./components/header";
 
 function App() {
   return (
     <main className="antialiased">
-      <h1>Principal</h1>
-      <button className="cursor-not-allowed">Gostei</button>
+      <Header />
     </main>
   );
 }
