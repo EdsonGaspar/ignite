@@ -3,7 +3,7 @@ import { Header } from "./components/header";
 
 function App() {
   return (
-    <main className="antialiased">
+    <main className=" antialiased">
       <Header />
     </main>
   );
