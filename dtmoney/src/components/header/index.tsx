@@ -2,7 +2,7 @@ import logoDtmoney from "../../assets/favicon.svg";
 
 export function Header() {
   return (
-    <header className="bg-[#121214] text-[#E1E1E6] h-32 flex items-center ">
+    <header className="bg-[#121214] text-[#E1E1E6] pt-6 pb-36  flex  ">
       <nav className="max-w-7xl flex justify-between items-center w-full m-auto px-9">
         <div className="flex items-center gap-4">
           <img src={logoDtmoney} alt="Logo da App" />
