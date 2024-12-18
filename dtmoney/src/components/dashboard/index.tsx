@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Summary } from "../summary";
+import { Search } from "../search";
 interface SummaryProps {
   titleCard: string;
 }
@@ -17,13 +18,14 @@ export function Dashboar() {
       <section className="max-w-7xl m-auto px-9">
         <div className="flex items-center justify-between pt-10">
           {titleCard.map((title) => (
-            <Summary titleCard={title.titleCard} />
+            <Summary key={title.titleCard} titleCard={title.titleCard} />
           ))}
         </div>
 
-        <div>
+        {/* <div>
           <h1>Dashboard</h1>
-        </div>
+        </div> */}
+        <Search />
       </section>
     </div>
   );
