@@ -9,10 +9,7 @@ export function Dashboar() {
   const [titleCard, setTitleCard] = useState<SummaryProps[]>([]);
 
   useEffect(() => {
-    const formattedTitleCard = listTitleCard.map((title) => ({
-      titleFromated: title,
-    }));
-    setTitleCard(formattedTitleCard);
+    setTitleCard(listTitleCard.map((title) => ({ titleCard: title })));
   }, []);
 
   return (
