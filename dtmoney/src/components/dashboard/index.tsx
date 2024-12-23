@@ -1,16 +1,37 @@
 import { useEffect, useState } from "react";
+import { Entrada } from "../../assets/entrada.svg";
 import { Summary } from "../summary";
 import { Search } from "../search";
-interface SummaryProps {
-  titleCard: string;
-}
-const listTitleCard = ["Entrada", "Saída", "Total"];
+type SummaryProps = [
+  {
+    titleCard: string;
+    valor: number;
+    icon: string;
+  }
+];
+const listTitleCard = [
+  {
+    titleCard: "Entradas",
+    valor: 17400,
+    icon: <img src={Entrada} alt="Icon de Entrada" />,
+  },
+  {
+    titleCard: "Saídas",
+    valor: 18400,
+    icon: <img src={Entrada} alt="Icon de Entrada" />,
+  },
+  {
+    titleCard: "Total",
+    valor: 19400,
+    icon: <img src={Entrada} alt="Icon de Entrada" />,
+  },
+];
 
 export function Dashboar() {
   const [titleCard, setTitleCard] = useState<SummaryProps[]>([]);
 
   useEffect(() => {
-    setTitleCard(listTitleCard.map((title) => ({ titleCard: title })));
+    setTitleCard(listTitleCard);
   }, []);
 
   return (
