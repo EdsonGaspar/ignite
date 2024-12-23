@@ -1,29 +1,27 @@
 import { useEffect, useState } from "react";
-import { Entrada } from "../../assets/entrada.svg";
+// import { Entrada } from "../../assets/entrada.svg";
 import { Summary } from "../summary";
 import { Search } from "../search";
-type SummaryProps = [
-  {
-    titleCard: string;
-    valor: number;
-    icon: string;
-  }
-];
+type SummaryProps = {
+  titleCard: string;
+  valor: number;
+  icon: string;
+};
 const listTitleCard = [
   {
     titleCard: "Entradas",
     valor: 17400,
-    icon: <img src={Entrada} alt="Icon de Entrada" />,
+    icon: "Imagen1",
   },
   {
     titleCard: "Saídas",
     valor: 18400,
-    icon: <img src={Entrada} alt="Icon de Entrada" />,
+    icon: "Imagen2",
   },
   {
     titleCard: "Total",
     valor: 19400,
-    icon: <img src={Entrada} alt="Icon de Entrada" />,
+    icon: "Imagen3",
   },
 ];
 
@@ -39,7 +37,14 @@ export function Dashboar() {
       <section className="max-w-7xl m-auto px-9 relative">
         <div className="flex items-center pt-10 gap-7 absolute top-[-130px] left-9 ">
           {titleCard.map((title) => (
-            <Summary key={title.titleCard} titleCard={title.titleCard} />
+            <Summary
+              key={title.titleCard}
+              titleCard={title.titleCard}
+              valor={title.valor}
+              icon={title.icon}
+            >
+              {/* {title.titleCard} {title.valor} {title.icon}, */}
+            </Summary>
           ))}
         </div>
 
