@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-// import { Entrada } from "../../assets/entrada.svg";
+import Entrada from "../../assets/entrada.svg?react";
+import Saida from "../../assets/saida.svg?react";
+import Total from "../../assets/total.svg?react";
 import { Summary } from "../summary";
 import { Search } from "../search";
 type SummaryProps = {
@@ -11,17 +13,17 @@ const listTitleCard = [
   {
     titleCard: "Entradas",
     valor: 17400,
-    icon: "Imagen1",
+    icon: <Entrada />,
   },
   {
     titleCard: "Saídas",
     valor: 18400,
-    icon: "Imagen2",
+    icon: <Saida />,
   },
   {
     titleCard: "Total",
     valor: 19400,
-    icon: "Imagen3",
+    icon: <Total />,
   },
 ];
 
@@ -29,7 +31,7 @@ export function Dashboar() {
   const [titleCard, setTitleCard] = useState<SummaryProps[]>([]);
 
   useEffect(() => {
-    setTitleCard(listTitleCard);
+    setTitleCard(listTitleCard.);
   }, []);
 
   return (

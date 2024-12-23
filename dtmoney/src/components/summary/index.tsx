@@ -13,7 +13,7 @@ export function Summary({ titleCard, valor, icon }: TitleCardProps) {
     <section>
       <Card className="bg-[#323238] text-[#C4C4CC] border-none w-96 h-36 cursor-pointer">
         <CardHeader>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between ">
             <div>{titleCard}</div>
             {/* <img src={inputIcon} alt="Icon da entrada" className="w-8 h-8" /> */}
             <div>{icon}</div>
