@@ -4,7 +4,7 @@ import { Header } from "./components/header";
 
 function App() {
   return (
-    <main className=" antialiased">
+    <main className=" antialiased h-screen">
       <Header />
       <Dashboar />
     </main>

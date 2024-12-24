@@ -6,7 +6,7 @@ interface TitleCardProps {
   children?: ReactNode;
   titleCard: string;
   valor: number;
-  icon: string;
+  icon: JSX.Element;
 }
 export function Summary({ titleCard, valor, icon }: TitleCardProps) {
   return (

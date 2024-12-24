@@ -7,7 +7,7 @@ import { Search } from "../search";
 type SummaryProps = {
   titleCard: string;
   valor: number;
-  icon: string;
+  icon: JSX.Element;
 };
 const listTitleCard = [
   {
@@ -31,7 +31,7 @@ export function Dashboar() {
   const [titleCard, setTitleCard] = useState<SummaryProps[]>([]);
 
   useEffect(() => {
-    setTitleCard(listTitleCard.);
+    setTitleCard(listTitleCard);
   }, []);
 
   return (
